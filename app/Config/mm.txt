@@ -1,0 +1,9 @@
+魏志华
+学号 ：10389252
+电话　：15902020381  (620381)
+邮箱 ：wayziwa@163.com 
+
+
+cakephp  ThinkPHP
+
+ session cookie http报文

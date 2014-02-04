@@ -1,0 +1,505 @@
+/****************************************************** 全局样式 ***********************************************************/
+html {
+	overflow-x: hidden;
+	overflow-y: auto; 
+}
+
+body {
+	font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #f5f5f5;
+	min-width: 1340px;
+	padding: 0;
+	margin: 0;
+}
+
+ul, li {
+	margin: 0px;
+}
+
+
+/****************************************************** 顶部栏样式 **********************************************************/
+#header {
+	background-color: #2d2d2d;
+	margin: 0 0 0 -20px;
+	padding: 0 20px;
+	width: 100%;
+	min-width: 1310px;
+}
+
+/* 左侧logo样式 */
+#header .logo{
+	margin: 5px 0px 5px 10px;
+	width: 160px;
+	height: 46px;	
+}
+
+#header .logo #cpn-logo {
+	width: 160px;
+	height: 46px;
+}
+
+/* 顶部菜单样式. */
+.header-bar{
+	margin-top: 15px;
+}
+
+/* 头像名字显示区样式. */
+#header .avatar{
+	margin-top: 13px;
+	margin-left: 50px;
+}
+
+#header .avatar #user-avatar {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+#header .avatar #user-name {
+	margin-left: 10px; 
+	display: inline-block;
+}
+
+#header .avatar a {
+	color: #fff
+}
+
+#header .avatar a:hover {
+	color: #eee;
+	text-decoration: none;
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+
+
+/****************************************************** 主内容区样式 ********************************************************/
+
+/** 侧边栏 **/
+#sidebar {
+	position: relative;
+	min-height: 585px;
+	width: 200px;
+	margin-left: -20px;
+	padding: 50px 10px 0px 10px;
+	background: #2d2d2d;
+}
+
+#sidebar #myTab {
+	text-align:center;
+}
+
+#sidebar #myTab a {
+	color: #fff;
+}
+
+#sidebar #myTab a:hover {
+	color: #0088cc;
+}
+
+#sidebar #myTab .icon-chevron-right {
+  	float: right;
+	margin-top: 2px;
+  	margin-right: -6px;
+  	opacity: .25;
+}
+
+/** 面包屑导航 **/
+#breadcrumb {
+	margin: 20px 0 0 0;
+	border-radius: 0;
+}
+
+#breadcrumb a:hover {
+	text-decoration: none;
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+#project-adder {
+	position: absolute;
+	top: 84px;
+	right: 50px;
+}
+
+#project-adder a:hover {
+	text-decoration: none;
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+/** 内容 **/
+#content {
+	background-color: #f5f5f5;
+	width: 1046px;
+	min-width: 1046px;
+	margin: 0 auto;
+}
+
+#content h1, h2, h4, h5, h6 {
+	/*background-color: #f5f5f5;*/
+}
+
+/** 底部栏 **/
+#footer {
+	position: relative;
+	bottom: 10px;
+	text-align: center;
+	width: 125px;
+	margin: 0 auto;
+}
+
+#footer p {
+	margin: 0;
+}
+
+
+
+/****************************************************** 项目详细页面样式 ****************************************************/
+.project-view form {
+	margin:0; width: 100%;
+}
+
+.p-stage a:hover {
+	text-decoration: none;
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+.stage-separator {
+	height: 45px;
+	background-image: url(../img/divider.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.p-single {
+	margin-left: 8px;
+	float: left;
+	width: 251px;
+	height: 116px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ccc;	
+	cursor: pointer;
+}
+
+.p-single:hover	{
+	position: relative;
+	top: -2px;
+	left: -2px;
+	border-color: #0088cc;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 105, 214, 0.25);
+	-moz-box-shadow: 0 2px 4px rgba(0, 105, 214, 0.25);
+	box-shadow: 0 2px 4px rgba(0, 105, 214, 0.25);
+}
+
+.p-status-bar {
+	float: left;
+	width: 13px;
+	height: 116px;
+	background-color: #000;
+}
+
+.p-manager {
+	float: left;
+	width: 56px;
+	height: 116px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.p-manager .p-avatar {
+	width: 46px;
+	height: 55px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.p-manager .p-avatar img {
+	width: 46px;
+	height: 55px;
+}
+
+.p-manager .p-name {
+	text-align: center;
+}
+
+.p-manager .p-name span{
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #333333;
+}
+
+.p-detail {
+	float: left;
+	margin-top: 18px;
+	width: 162px;
+	height: 93px;
+}
+
+.p-detail .p-summary {
+	text-align: left;
+}
+
+.p-detail .p-summary span {
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #333333;
+}
+
+.p-detail .p-start {
+	text-align: left;
+}
+
+.p-detail .p-start span {
+	font-size: 13px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #828283;
+}
+
+.p-detail .p-end {
+	text-align: left;
+}
+
+.p-detail .p-end span {
+	font-size: 13px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #9FC843;
+}
+
+.p-status {
+	float: left;
+	position: relative;
+	top: -111px;
+	left: 96px;
+	width: 66px;
+	height: 116px;
+	background-image: url(../img/status_underway.png);
+	background-repeat: no-repeat;
+	background-position: 0 0; 
+}
+
+.p-status span {
+	position: relative;
+	top: 5px;
+	left: 27px;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#deleteProject {
+	top: 35%;
+	left: 65%;
+	width: 200px;
+}
+
+
+
+
+/****************************************************** 项目列表页面样式 ****************************************************/
+#project-management .project-header {	
+	padding: 3px 35px 3px 35px;
+	margin-bottom: 5px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #fcf8e3;
+	border: 1px solid #fbeed5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#project-management .project-header h4 {
+	color: #c09853;
+	margin: 0;
+}
+
+#project-management .project-statistics {
+	margin-left: 25px;
+	margin-top: 8px;
+}
+
+#project-management ul li .thumbnail:hover{
+	border-color: #0088cc;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 105, 214, 0.25);
+	-moz-box-shadow: 0 2px 4px rgba(0, 105, 214, 0.25);
+	box-shadow: 0 2px 4px rgba(0, 105, 214, 0.25);
+}
+
+
+/****************************************************** 项目列表页面样式 ****************************************************/
+
+#user-management ul li h5 {
+	width: 125px;
+	margin: 5px auto;
+}
+
+#user-management ul li div:hover{
+	border-color: #0088cc;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 105, 214, 0.25);
+	-moz-box-shadow: 0 2px 4px rgba(0, 105, 214, 0.25);
+	box-shadow: 0 2px 4px rgba(0, 105, 214, 0.25);
+}
+
+#authority-management-entrance {
+	position: absolute;
+	right: 120px;
+	top: 84px;
+}
+
+
+/**************************************************** 用户详细页面样式 ******************************************************/
+#u-projects-form {
+	padding-left: 35px;
+	margin-top: 10px;
+	width: 1013px;
+}
+
+#task-selector {
+	position: fixed;
+	z-index: 1055;
+	right: -71px;
+	top: 300px;
+	text-align: center;
+	overflow: hidden;
+	transition: right 0.5s;
+	-moz-transition: right 0.5s;		/* Firefox 4 */
+	-webkit-transition: right 0.5s;		/* Safari 和 Chrome */
+	-o-transition: right 0.5s;			/* Opera */
+}
+
+#task-selector:hover {
+	right: 0px;
+}
+
+#task-selector #selector-trigger {
+	float: left;
+	cursor: pointer;
+	width: 15px;
+	height: 101px;
+	background-image: url(../img/nav.png);
+}
+
+#task-selector ul {
+	display: block;
+	float: left;
+	list-style: none;
+	background-color: #666;
+	border: 1px solid #aaa;
+}
+
+#task-selector ul li {	
+	border-top: 1px solid #aaa;
+}
+
+#task-selector ul li:first-child {
+	border-top: none;
+}
+
+#task-selector ul li a {
+	display: block;
+	color: #fff;
+	padding: 2px 7px;
+	text-decoration: none;
+}
+
+#task-selector ul li:hover {
+	background-color: #eee;
+}
+
+#task-selector ul li a:hover {
+	color: #0088cc;
+}
+
+
+.u-single {
+	float: left;
+	width: 199px;
+	height: 146px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 10px;
+	margin-right: 35px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.u-single:hover {
+	border-color: #0088cc;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+	-moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+	box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+
+.u-single p{
+	text-align: left;
+	margin-bottom: 2px;
+}
+
+.u-single p span {
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #333333;
+}
+
+.u-single .u-priority {
+	float: right;
+	font-size: 13px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #FF0000;
+}
+
+.u-single .u-progress {
+	margin: 8px auto;
+	width: 200px;
+	height: 21px;
+}
+
+.u-single .u-status {
+	height: 27px;
+	width: 66px;
+	margin: 0 auto;
+}
+
+.u-single .u-status img {
+	height: 27px;
+}
+
+
+/****************************************************** 创建成功页面样式 *****************************************************/
+.create-info {
+	background-color: #f5f5f5;
+}
+
+.create-info .create-return {
+	width: 205px;
+	margin: 0 auto;
+}
+
+.create-info a:hover {
+	text-decoration: none;
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
